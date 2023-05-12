@@ -56,7 +56,8 @@ pipeline {
                 """
 
                 sh """
-                echo "Deploying Code"
+                echo "Creating Namespace"
+                /opt/homebrew/bin/kubectl create -f namespace.yml
                 """
             }
         }
