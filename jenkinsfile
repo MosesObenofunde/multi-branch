@@ -50,7 +50,9 @@ pipeline {
             
             steps {
                 sh """
-                echo "Building Artifact"
+                echo "list user"
+                who
+                whoami
                 """
 
                 sh """
