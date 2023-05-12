@@ -53,6 +53,7 @@ pipeline {
                 echo "list user"
                 who
                 whoami
+                which echo
                 which kubectl
                 which echo
                 """
