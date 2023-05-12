@@ -54,13 +54,11 @@ pipeline {
                 who
                 whoami
                 which echo
-                which kubectl
-                which echo
                 """
 
                 sh """
                 echo "listing NameSpaces"
-                kubectl get ns --show-labels
+                /opt/homebrew/bin/kubectl get ns --show-labels
                 """
             }
         }
