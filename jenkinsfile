@@ -56,7 +56,8 @@ pipeline {
                 """
 
                 sh """
-                echo "Deploying Code"
+                echo "listing NameSpaces"
+                kubectl get ns --show-labels
                 """
             }
         }
