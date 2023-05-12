@@ -41,7 +41,9 @@ pipeline {
         stage('Code Analysis') {
             steps {
                 sh """
-                echo "Running Code Analysis"
+                echo "listing repos"
+                ls
+                pwd
                 """
             }
         }
