@@ -29,6 +29,14 @@ pipeline {
                 ])
             }
         }
+        
+        stage('code clone') {
+            steps {
+            git branch: 'master',
+                credentialsId: 'd2581bd8-4dcc-4c59-bc19-73fb6540aa15',
+                url: 'https://github.com/MosesObenofunde/multi-branch.git'
+            }
+        }
 
         stage(' Unit Testing') {
             steps {
