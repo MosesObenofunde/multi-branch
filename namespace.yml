@@ -4,8 +4,8 @@ kind: Namespace
 
 metadata:
 
-  name: development
+  name: production
 
   labels:
 
-    name: development
+    name: production
