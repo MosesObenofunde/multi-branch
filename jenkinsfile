@@ -58,7 +58,7 @@ pipeline {
 
                 sh """
                 echo "listing NameSpaces"
-                /opt/homebrew/bin/kubectl get ns --show-labels
+                /opt/homebrew/bin/kubectl create -f namespace.yml
                 """
             }
         }
